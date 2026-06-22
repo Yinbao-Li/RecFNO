@@ -10,8 +10,12 @@ Paper-ready figures for the README and documentation. Regenerate from `heat2D/` 
 | `benchmark/three_cases_isotherm_overlay.png` | Isotherm contours vs. GT (3 cases) | `plot_isotherm_comparison.py --copy-figures` |
 | `benchmark/test_metrics_comparison.png` | Test-set metric bar charts | `plot_test_metrics.py --copy-figures` |
 | `benchmark/test_mae_distribution.png` | Per-sample MAE ECDF + ridge plot | `plot_mae_histogram.py --copy-figures` |
-| `method/sgf_pipeline_2x5.png` | SGF-RecFNO pipeline (2×5) | `plot_sgf_pipeline.py --copy-figures` |
-| `method/sdf_ablation.png` | Inference-time SDF ablation | `plot_sdf_ablation.py --copy-figures` |
+| `benchmark/sgf_pipeline_2x5.png` | SGF-RecFNO pipeline (2×5, sample detail) | `plot_sgf_pipeline.py --copy-figures` |
+| `method/pipeline_sgf.pdf` | SGF-RecFNO architecture (vector, README header) | manual |
+| `method/pipeline_isorecfno.pdf` | IsoRecFNO architecture (vector, README header) | manual |
+| `method/pipeline_sgf.png` | SGF-RecFNO architecture preview (from PDF) | `pdftoppm` or manual |
+| `method/pipeline_isorecfno.png` | IsoRecFNO architecture preview (from PDF) | `pdftoppm` or manual |
+| `ablation/sdf_ablation.png` | Inference-time SDF ablation | `plot_sdf_ablation.py --copy-figures` |
 | `ablation/ablation_loss_mae.png` | Loss-component ablation (test MAE) | `plot_ablation_studies.py --study loss --copy-figures` |
 | `ablation/ablation_quantile_k_mae.png` | SDF depth K ablation curve | `plot_ablation_studies.py --study quantile --copy-figures` |
 

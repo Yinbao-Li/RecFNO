@@ -6,6 +6,20 @@
 
 [![GitHub](https://img.shields.io/github/stars/Yinbao-Li/SGF-RecFNO?style=social)](https://github.com/Yinbao-Li/SGF-RecFNO)
 
+## Architecture
+
+### SGF-RecFNO — self-geometry feedback
+
+Sparse sensors → FNO backbone → predicted temperature field → multi-level isotherm SDFs → lightweight Fourier refinement (closed-loop geometry feedback).
+
+[![SGF-RecFNO architecture](figures/method/pipeline_sgf.png)](figures/method/pipeline_sgf.pdf)
+
+### IsoRecFNO — isotherm-aware geometry branch
+
+Joint field reconstruction with explicit isotherm supervision on a geometry-aware branch.
+
+[![IsoRecFNO architecture](figures/method/pipeline_isorecfno.png)](figures/method/pipeline_isorecfno.pdf)
+
 ---
 
 ## Methods
@@ -36,8 +50,6 @@ Implementation: `model/sgf_recfno.py` · Loss: `utils/sgf_loss.py`
 
 25 sensors on a 200×200 field; Dirichlet / adiabatic boundaries.
 
-![Problem setup](figures/setup/benchmark_problem_setup.png)
-
 ### Six-model comparison (3 test cases)
 
 ![Three cases × six models](figures/benchmark/three_cases_six_models.png)
@@ -52,11 +64,11 @@ Implementation: `model/sgf_recfno.py` · Loss: `utils/sgf_loss.py`
 |--------------------------------|-------------------------------|
 | ![Metrics](figures/benchmark/test_metrics_comparison.png) | ![MAE distribution](figures/benchmark/test_mae_distribution.png) |
 
-### SGF-RecFNO pipeline & SDF ablation
+### Qualitative pipeline & SDF ablation
 
-| Pipeline (sample #5500) | Inference-time SDF ablation |
-|-------------------------|----------------------------|
-| ![Pipeline](figures/method/sgf_pipeline_2x5.png) | ![SDF ablation](figures/method/sdf_ablation.png) |
+| Pipeline detail (sample #5500) | Inference-time SDF ablation |
+|--------------------------------|----------------------------|
+| ![Pipeline](figures/benchmark/sgf_pipeline_2x5.png) | ![SDF ablation](figures/ablation/sdf_ablation.png) |
 
 More figures and regeneration commands: [figures/README.md](figures/README.md).
 

@@ -129,7 +129,7 @@ def main():
 
     if args.copy_figures:
         from benchmark.figures_paths import copy_to_figures
-        dst = copy_to_figures(out_png, args.out_name, category='method')
+        dst = copy_to_figures(out_png, args.out_name, category='ablation')
         print(f'Copied: {dst}', flush=True)
 
 

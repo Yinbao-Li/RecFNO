@@ -27,8 +27,8 @@ make plot-ablations     # evaluate ablation checkpoints & plot MAE
 | `plot_isotherm_comparison.py` | Isotherm contour overlays | `figures/benchmark/` |
 | `plot_test_metrics.py` | Test metric bar charts + CSV | `figures/benchmark/` |
 | `plot_mae_histogram.py` | Per-sample MAE ECDF + ridge | `figures/benchmark/` |
-| `plot_sgf_pipeline.py` | SGF 2×5 pipeline figure | `figures/method/` |
-| `plot_sdf_ablation.py` | Inference-time SDF ablation | `figures/method/` |
+| `plot_sgf_pipeline.py` | SGF 2×5 pipeline figure | `figures/benchmark/` |
+| `plot_sdf_ablation.py` | Inference-time SDF ablation | `figures/ablation/` |
 | `plot_ablation_studies.py` | Training ablation MAE plots | `figures/ablation/` |
 | `plot_all_figures.py` | Run all of the above | all categories |
 
